@@ -2,7 +2,7 @@
   "name": "airbnb-react-snippets-prettier",
   "description":
     "ES6 Reactjs code snippets for vscode compliant with Airbnb style guide and prettier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Airbnb react snippets (Prettier)",
   "publisher": "EpicCamel2302",
   "icon": "images/react.png",
@@ -37,6 +37,16 @@
         "language": "typescriptreact",
         "path": "./snippets/snippets.json"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "airbnb-react-snippets",
+      "properties": {
+        "airbnb-react-snippets.useDoubleQuotes": {
+          "type": "boolean",
+          "default": "false",
+          "description": "Use double quotes on strings in place of single quotes"
+        }
+      }
+    }
   }
 }
