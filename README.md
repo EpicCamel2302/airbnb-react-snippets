@@ -1,4 +1,4 @@
-# Airbnb react snippets
+# Airbnb react snippets (Prettier)
 
 ES6 [Reactjs][react] code snippets for VS Code compliant with [Airbnb style guide](https://github.com/airbnb/javascript/tree/master/react)
 
