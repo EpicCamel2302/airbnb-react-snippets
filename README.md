@@ -2,6 +2,8 @@
 
 ES6 [Reactjs][react] code snippets for VS Code compliant with [Airbnb style guide](https://github.com/airbnb/javascript/tree/master/react)
 
+Fork of [cobeia/airbnb-react-snippets](https://github.com/cobeia/airbnb-react-snippets) which replaces string single quotes with double quotes, for prettier users
+
 ## Installation
 
 In order to install an extension you need to launch the Command Pallete (Ctrl + Shift + P or Cmd + Shift + P) and type Extensions.
