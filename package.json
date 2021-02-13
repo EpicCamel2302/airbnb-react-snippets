@@ -2,14 +2,14 @@
   "name": "airbnb-react-snippets-prettier",
   "description":
     "ES6 Reactjs code snippets for vscode compliant with Airbnb style guide and prettier",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "displayName": "Airbnb react snippets (Prettier)",
   "publisher": "EpicCamel2302",
   "icon": "images/react.png",
   "galleryBanner": {
     "theme": "light"
   },
-  "license": "SEE LICENSE IN LICENSE.md",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/EpicCamel2302/airbnb-react-snippets"
@@ -18,6 +18,7 @@
     "vscode": "0.10.x"
   },
   "categories": ["Snippets"],
+  "keywords": ["React", "Airbnb", "Prettier", "ES6"],
   "contributes": {
     "snippets": [
       {
