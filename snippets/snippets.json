@@ -60,24 +60,101 @@
     "prefix": "rfunc",
     "body": [
       "import React from \"react\";",
-      "import PropTypes from \"prop-types\";",
       "",
-      "const propTypes = {};",
-      "",
-      "const defaultProps = {};",
-      "",
-      "export default function ${1:${TM_FILENAME_BASE}}(props) {",
+      "const ${1:${TM_FILENAME_BASE}} = (props) => {",
       "\treturn (",
-      "\t\t<React.Fragment>",
+      "\t\t<>",
       "\t\t\t$0",
-      "\t\t</React.Fragment>",
+      "\t\t</>",
       "\t);",
       "}",
       "",
-      "${1:${TM_FILENAME_BASE}}.propTypes = propTypes;",
-      "${1:${TM_FILENAME_BASE}}.defaultProps = defaultProps;"
+      "export default ${1:${TM_FILENAME_BASE}}",
+      ""
     ],
     "description": "React ES6 Functional Component"
+  },
+
+  "useState": {
+    "prefix": "uste",
+    "body": [
+      "const [${1:variable}, set${2:setter}] = useState(${3:initialState})"
+    ],
+    "description": "React use State hook"
+  },
+
+  "useContext": {
+    "prefix": "uctx",
+    "body": [
+      "const ${1:variable} = useContext(${2:contextObject})"
+    ],
+    "description": "React use Context hook"
+  },
+
+  "useEffect": {
+    "prefix": "ufx",
+    "body": [
+      "useEffect(${0});"
+    ],
+    "description": "React use Effect hook"
+  },
+
+  "useReducer": {
+    "prefix": "urdc",
+    "body": [
+      "const [${1:state}, ${2:dispatch}] = useReducer{$3:reducer}, ${4:initialArg}, ${5:initFunction});"
+    ],
+    "description": "React use Reducer hook"
+  },
+
+  "useCallback": {
+    "prefix": "ucbck",
+    "body": [
+      "const ${1:variable} = useCallback((${2:args}) => {",
+      "\t${0}",
+      "});"
+    ],
+    "description": "React use Callback hook"
+  },
+
+  "useMemo": {
+    "prefix": "umem",
+    "body": [
+      "const ${1:variable} = useMemo(() => ${2:funcName}(${3:args}), [${3:args}]);"
+    ],
+    "description": "React use Memo hook"
+  },
+
+  "useRef": {
+    "prefix": "uref",
+    "body": [
+      "const ${1:refContainer} = useRef(${2:initialValue});"
+    ],
+    "description": "React use Ref hook"
+  },
+  
+  "useImperativeHandle": {
+    "prefix": "uih",
+    "body": [
+      "useImperativeHandle(${1:ref}, ${2:createHandle}, [${3:deps}])"
+    ],
+    "description": "React use ImperativeHandle hook"
+  },
+  
+  "useLayoutEffect": {
+    "prefix": "ule",
+    "body": [
+      "useLayoutEffect(${0});"
+    ],
+    "description": "React use LayoutEffect hook"
+  },
+  
+  "useDebugValue": {
+    "prefix": "udv",
+    "body": [
+      "useDebugValue(${0:value})"
+    ],
+    "description": "React use DebugValue hook"
   },
 
   "reactConstructor": {

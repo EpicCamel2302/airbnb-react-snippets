@@ -11,20 +11,21 @@ There you have either the option to show the already installed snippets or insta
 
 ## Supported languages (file extensions)
 
-* JavaScript (.js)
-* TypeScript (.ts)
-* JavaScript React (.jsx)
-* TypeScript React (.tsx)
+- JavaScript (.js)
+- TypeScript (.ts)
+- JavaScript React (.jsx)
+- TypeScript React (.tsx)
 
 ## Snippets
 
 Below is a list of all available snippets and the triggers of each one. The **⇥** means the `TAB` key.
 
+### Class Components
+
 |   Trigger | Content                                           |
 | --------: | ------------------------------------------------- |
 |     `rc→` | class component skeleton                          |
 |    `rcc→` | class component skeleton with constructor         |
-|  `rfunc→` | stateless component skeleton                      |
 | `rconst→` | class default constructor                         |
 |    `rpt→` | empty propTypes declaration                       |
 |    `rdp→` | empty defaultProps declaration                    |
@@ -41,6 +42,27 @@ Below is a list of all available snippets and the triggers of each one. The **�
 |   `rssf→` | `this.setState with function as parameter`        |
 | `rprops→` | `this.props`                                      |
 | `rstate→` | `this.state`                                      |
+
+### Function Components
+
+|  Trigger | Content                     |
+| -------: | --------------------------- |
+| `rfunc→` | function component skeleton |
+
+### Hooks
+
+|  Trigger | Content                   |
+| -------: | ------------------------- |
+|  `uste→` | UseState Hook             |
+|  `uctx→` | UseContext Hook           |
+|   `ufx→` | UseEffect Hook            |
+|  `urdc→` | UseReducer Hook           |
+| `ucbck→` | UseCallback Hook          |
+|  `umem→` | UseMemo Hook              |
+|  `uref→` | UseRef Hook               |
+|   `uih→` | UseImperativeHandler Hook |
+|   `ule→` | UseLayoutEffect Hook      |
+|   `udv→` | UseDebugValue Hook        |
 
 The following table lists all the snippets that can be used for prop types.
 Every snippet regarding prop types begins with `pt` so it's easy to group it all together and explore all the available options.
