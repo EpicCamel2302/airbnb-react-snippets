@@ -2,17 +2,17 @@
   "reactClassComponentWithConstructor": {
     "prefix": "rcc",
     "body": [
-      "import React from \"react\";",
-      "import PropTypes from \"prop-types\";",
+      "import React from \"react\"",
+      "import PropTypes from \"prop-types\"",
       "",
-      "const propTypes = {};",
+      "const propTypes = {}",
       "",
-      "const defaultProps = {};",
+      "const defaultProps = {}",
       "",
       "export default class ${1:${TM_FILENAME_BASE}} extends React.Component {",
       "\tconstructor(props) {",
-      "\t\tsuper(props);",
-      "\t\tthis.state = {};",
+      "\t\tsuper(props)",
+      "\t\tthis.state = {}",
       "\t}",
       "",
       "\trender() {",
@@ -20,12 +20,12 @@
       "\t\t\t<React.Fragment>",
       "\t\t\t\t$0",
       "\t\t\t</React.Fragment>",
-      "\t\t);",
+      "\t\t)",
       "\t}",
       "}",
       "",
-      " ${1:${TM_FILENAME_BASE}}.propTypes = propTypes;",
-      " ${1:${TM_FILENAME_BASE}}.defaultProps = defaultProps;"
+      " ${1:${TM_FILENAME_BASE}}.propTypes = propTypes",
+      " ${1:${TM_FILENAME_BASE}}.defaultProps = defaultProps"
     ],
     "description": "React ES6 Component with Constructor"
   },
@@ -33,12 +33,12 @@
   "reactClassComponent": {
     "prefix": "rc",
     "body": [
-      "import React from \"react\";",
-      "import PropTypes from \"prop-types\";",
+      "import React from \"react\"",
+      "import PropTypes from \"prop-types\"",
       "",
-      "const propTypes = {};",
+      "const propTypes = {}",
       "",
-      "const defaultProps = {};",
+      "const defaultProps = {}",
       "",
       "export default class ${1:${TM_FILENAME_BASE}} extends React.Component {",
       "\trender() {",
@@ -46,12 +46,12 @@
       "\t\t\t<React.Fragment>",
       "\t\t\t\t$0",
       "\t\t\t</React.Fragment>",
-      "\t\t);",
+      "\t\t)",
       "\t}",
       "}",
       "",
-      " ${1:${TM_FILENAME_BASE}}.propTypes = propTypes;",
-      " ${1:${TM_FILENAME_BASE}}.defaultProps = defaultProps;"
+      " ${1:${TM_FILENAME_BASE}}.propTypes = propTypes",
+      " ${1:${TM_FILENAME_BASE}}.defaultProps = defaultProps"
     ],
     "description": "React ES6 Component"
   },
@@ -59,14 +59,14 @@
   "reactFunctionalComponent": {
     "prefix": "rfunc",
     "body": [
-      "import React from \"react\";",
+      "import React from \"react\"",
       "",
       "const ${1:${TM_FILENAME_BASE}} = (props) => {",
       "\treturn (",
       "\t\t<>",
       "\t\t\t$0",
       "\t\t</>",
-      "\t);",
+      "\t)",
       "}",
       "",
       "export default ${1:${TM_FILENAME_BASE}}",
@@ -94,7 +94,7 @@
   "useEffect": {
     "prefix": "ufx",
     "body": [
-      "useEffect(${0});"
+      "useEffect(${0})"
     ],
     "description": "React use Effect hook"
   },
@@ -102,7 +102,7 @@
   "useReducer": {
     "prefix": "urdc",
     "body": [
-      "const [${1:state}, ${2:dispatch}] = useReducer{$3:reducer}, ${4:initialArg}, ${5:initFunction});"
+      "const [${1:state}, ${2:dispatch}] = useReducer{$3:reducer}, ${4:initialArg}, ${5:initFunction})"
     ],
     "description": "React use Reducer hook"
   },
@@ -112,7 +112,7 @@
     "body": [
       "const ${1:variable} = useCallback((${2:args}) => {",
       "\t${0}",
-      "});"
+      "})"
     ],
     "description": "React use Callback hook"
   },
@@ -120,7 +120,7 @@
   "useMemo": {
     "prefix": "umem",
     "body": [
-      "const ${1:variable} = useMemo(() => ${2:funcName}(${3:args}), [${3:args}]);"
+      "const ${1:variable} = useMemo(() => ${2:funcName}(${3:args}), [${3:args}])"
     ],
     "description": "React use Memo hook"
   },
@@ -128,7 +128,7 @@
   "useRef": {
     "prefix": "uref",
     "body": [
-      "const ${1:refContainer} = useRef(${2:initialValue});"
+      "const ${1:refContainer} = useRef(${2:initialValue})"
     ],
     "description": "React use Ref hook"
   },
@@ -144,7 +144,7 @@
   "useLayoutEffect": {
     "prefix": "ule",
     "body": [
-      "useLayoutEffect(${0});"
+      "useLayoutEffect(${0})"
     ],
     "description": "React use LayoutEffect hook"
   },
@@ -161,10 +161,10 @@
     "prefix": "rconst",
     "body": [
       "constructor(props) {",
-      "\tsuper(props);",
+      "\tsuper(props)",
       "\tthis.state = {",
       "\t\t$1,",
-      "\t};",
+      "\t}",
       "}"
     ],
     "description": "React ES6 Constructor"
@@ -172,7 +172,7 @@
 
   "reactBindMethod": {
     "prefix": "rbm",
-    "body": ["this.${1:method} = this.${1:method}.bind(this);"],
+    "body": ["this.${1:method} = this.${1:method}.bind(this)"],
     "description": "React ES6 bind method to this"
   },
 
@@ -227,20 +227,20 @@
 
   "componentRender": {
     "prefix": "rren",
-    "body": "render() {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n}",
+    "body": "render() {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}",
     "description":
       "When called, it should examine this.props and this.state and return a single child element."
   },
 
   "componentSetStateObject": {
     "prefix": "rsst",
-    "body": "this.setState($0);",
+    "body": "this.setState($0)",
     "description": "Performs a shallow merge of nextState into current state"
   },
 
   "componentSetStateFunc": {
     "prefix": "rssf",
-    "body": "this.setState((state, props) => { return { $0 }});\n",
+    "body": "this.setState((state, props) => { return { $0 }})\n",
     "description": "Performs a shallow merge of nextState into current state"
   },
 
@@ -258,13 +258,13 @@
 
   "propTypes": {
     "prefix": "rpt",
-    "body": "$1.propTypes = {\n\t$2\n};",
+    "body": "$1.propTypes = {\n\t$2\n}",
     "description": "Creates empty propTypes declaration"
   },
 
   "defaultProps": {
     "prefix": "rdp",
-    "body": "$1.defaultProps = {\n\t$2\n};",
+    "body": "$1.defaultProps = {\n\t$2\n}",
     "description": "Creates empty defaultProps declaration"
   },
 
