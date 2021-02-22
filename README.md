@@ -20,6 +20,12 @@ There you have either the option to show the already installed snippets or insta
 
 Below is a list of all available snippets and the triggers of each one. The **⇥** means the `TAB` key.
 
+### Imports
+
+| Trigger | Content      |
+| ------: | ------------ |
+|  `imr→` | Import react |
+
 ### Class Components
 
 |   Trigger | Content                                           |

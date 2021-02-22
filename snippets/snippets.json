@@ -76,7 +76,7 @@
   },
 
   "importReact": {
-    "prefix": "imrc",
+    "prefix": "imr",
     "body" : [
       "import React from \"React\""
     ],
