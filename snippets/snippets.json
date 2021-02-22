@@ -75,6 +75,14 @@
     "description": "React ES6 Functional Component"
   },
 
+  "importReact": {
+    "prefix": "imrc",
+    "body" : [
+      "import React from \"React\""
+    ],
+    "description": "Import react"
+  },
+
   "useState": {
     "prefix": "uste",
     "body": [
